@@ -4,12 +4,12 @@ import NavbarElement from "./NavbarElement";
 
 const RightPane = () => {
   return (
-    <>
-      <section className="rightPane">
-        Right Pane
-        <NavbarElement />
-      </section>
-    </>
+    <section className="flex flex-col h-full bg-slate-300 ">
+      <NavbarElement />
+      <div className="flex h-full ">
+        <RecommendedList />
+      </div>
+    </section>
   );
 };
 
