@@ -4,12 +4,15 @@ import MainComp from "../Components/MainComp";
 
 const HomePage = () => {
   return (
-    <>
-      <section className="main-container">
+    <div className="flex flex-col ">
+      <div className="flex-1 overflow-y-auto">
         <MainComp />
+      </div>
+
+      <div className="bg-gray-200 fixed bottom-0 left-0 w-full h-20">
         <BottomPlayBar />
-      </section>
-    </>
+      </div>
+    </div>
   );
 };
 
