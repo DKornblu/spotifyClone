@@ -1,5 +1,5 @@
 import React from "react";
-import BottomPlayBar from "../Components/BottomPlayBar";
+import BottomPlayBar from "../Components/PlayBar/BottomPlayBar";
 import MainComp from "../Components/MainComp";
 
 const HomePage = () => {

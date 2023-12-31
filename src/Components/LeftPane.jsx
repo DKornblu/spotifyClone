@@ -1,19 +1,20 @@
-import React from 'react';
+import React from "react";
 import { CgPentagonUp } from "react-icons/cg";
-import LeftTop from './LeftTop';
-import LeftMiddle from './LeftMiddle';
-import LeftBottom from './LeftBottom';
+import LeftTop from "./LeftTop";
+import LeftMiddle from "./LeftMiddle";
+import LeftBottom from "./LeftBottom";
 
 const LeftPane = () => {
   const iconSize = 25;
 
   return (
-    <section className="flex-1 text-sm">
-      <LeftTop iconSize={iconSize}/>
+    <section className="flex-1 text-sm ">
+      <LeftTop iconSize={iconSize} />
       <LeftMiddle iconSize={iconSize} />
       <LeftBottom />
       <div>
-        <CgPentagonUp size={45}/> {/* Not an exact icon match to Spotify, and only when window is minimized */}
+        <CgPentagonUp size={45} />{" "}
+        {/* Not an exact icon match to Spotify, and only when window is minimized */}
       </div>
     </section>
   );
