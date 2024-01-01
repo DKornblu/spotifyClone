@@ -16,7 +16,7 @@ const CurrentlyPlaying = () => {
         <BsShuffle className="icon-play hover:text-white" />
 
         <BsFillSkipStartFill className="icon-play hover:text-white" />
-
+        {/* //TODO:magnify play when hovering */}
         <div className="icon-play-container">
           <div className="icon-play-circle bg-white rounded-full p-2">
             <BsFillPlayFill className="icon-play-sign " />
