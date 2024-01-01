@@ -4,7 +4,7 @@ import { IoSearchOutline } from "react-icons/io5";
 
 const LeftTop = ({ iconSize }) => {
   return (
-    <div className="flex flex-col justify-evenly h-24 border border-red-600 px-4 bg-spotifylightblack rounded-md">
+    <div className="flex flex-col justify-evenly h-24 border border-red-600 px-4 bg-spotifyblack rounded-md">
       <div className="flex flex-row items-center ">
         <div className="pr-3 hover:text-white">
           <GoHomeFill size={iconSize} />
