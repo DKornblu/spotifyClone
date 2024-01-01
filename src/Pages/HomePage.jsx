@@ -1,5 +1,5 @@
 import React from "react";
-import BottomPlayBar from "../Components/BottomPlayBar";
+import BottomPlayBar from "../Components/PlayBar/BottomPlayBar";
 import MainComp from "../Components/MainComp";
 
 const HomePage = () => {
@@ -9,7 +9,7 @@ const HomePage = () => {
         <MainComp />
       </div>
 
-      <div className="bg-gray-200 fixed bottom-0 left-0 w-full h-20">
+      <div className="bg-spotifyblack fixed bottom-0 left-0 w-full h-20">
         <BottomPlayBar />
       </div>
     </div>
