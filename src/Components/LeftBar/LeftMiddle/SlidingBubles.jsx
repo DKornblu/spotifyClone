@@ -6,7 +6,7 @@ const SlidingBubles = () => {
   //   TODO: add next and prv fucntionality
 
   return (
-    <div className="flex overflow-x-auto ">
+    <div className="flex overflow-x-auto py-2 ">
       {bubblesArray.map((bubble, index) => (
         <div
           key={index}

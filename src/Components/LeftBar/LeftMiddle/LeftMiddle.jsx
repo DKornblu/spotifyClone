@@ -7,8 +7,8 @@ import SlidingBubles from "./SlidingBubles";
 
 const LeftMiddle = ({ iconSize }) => {
   return (
-    <div className="flex flex-col justify-evenly h-24 border border-red-600 rounded-md bg-spotifyblack px-4">
-      <div className="flex flex-row justify-between items-center border border-red-400">
+    <div className="flex flex-col justify-evenly h-24 border border-red-600 rounded-md bg-spotifyblack px-4 ">
+      <div className="flex flex-row justify-between items-center border border-red-400 ">
         <div className="pr-3 hover:text-white">
           <VscLibrary size={iconSize} />
           {/* Not an exact icon match to Spotify */}
@@ -25,7 +25,7 @@ const LeftMiddle = ({ iconSize }) => {
           </div>
         </div>
       </div>
-      <div className="flex flex-row justify-between items-center ">
+      <div className="flex flex-row justify-between items-center">
         <SlidingBubles />
       </div>
     </div>
