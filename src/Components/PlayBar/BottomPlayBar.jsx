@@ -1,12 +1,17 @@
-import React from "react";
+import { useState } from "react";
 import CurrentlyPlaying from "./CurrentlyPlaying";
+import VolumeOptions from "./VolumeOptions";
 
 const BottomPlayBar = () => {
+  const [isCurrentlyPlaying, setIsCurrentlyPlaying] = useState(true);
+
   return (
     <section className="flex flex-row justify-between p-2 h-full items-center">
-      <div className="border border-teal-100">currently playing</div>
+      {isCurrentlyPlaying ? <>Display album</> : <div>display nothing</div>}
       <CurrentlyPlaying />
-      <div className="">right side</div>
+      <div className="hidden sm:block">
+        <VolumeOptions />
+      </div>
     </section>
   );
 };
