@@ -8,7 +8,7 @@ const LeftPane = () => {
   const iconSize = 25;
 
   return (
-    <section className="flex-1 text-sm m-2   rounded-md space-y-2">
+    <section className="flex-1 text-sm m-2 rounded-md space-y-2">
       <LeftTop iconSize={iconSize} />
       <LeftMiddle iconSize={iconSize} />
       <LeftBottom />
