@@ -3,7 +3,7 @@ import NavbarElement from "./NavBar/NavbarElement";
 
 const RightPane = () => {
   return (
-    <section className="flex flex-col h-full bg-slate-300 m-2 ">
+    <section className="flex flex-col h-full  m-2 ">
       <NavbarElement />
       <div className="flex h-full ">
         <RecommendedList />

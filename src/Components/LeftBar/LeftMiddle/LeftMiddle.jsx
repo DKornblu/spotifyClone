@@ -25,7 +25,7 @@ const LeftMiddle = ({ iconSize }) => {
           </div>
         </div>
       </div>
-      <div className="flex flex-row justify-between items-center">
+      <div className="flex flex-row justify-between items-center border border-green-600">
         <SlidingBubles />
       </div>
     </div>

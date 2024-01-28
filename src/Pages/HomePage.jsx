@@ -1,14 +1,14 @@
 import React from "react";
 import BottomPlayBar from "../Components/PlayBar/BottomPlayBar";
-import MainComp from "../Components/MainComp";
+import Wrapper from "../Components/Wrapper";
 
 const HomePage = () => {
   return (
     <section className="flex flex-col relative  w-full h-full">
       <div className="flex-1 bg-slate-600">
-        <MainComp />
+        <Wrapper />
       </div>
-      <div className="bg-black w-full fixed h-20 bottom-0">
+      <div className="bg-spotifyblack w-full fixed h-20 bottom-0">
         <BottomPlayBar />
       </div>
     </section>
