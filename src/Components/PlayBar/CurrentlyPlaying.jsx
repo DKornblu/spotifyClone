@@ -11,14 +11,14 @@ import "./PlayBarCSS.css";
 
 const CurrentlyPlaying = () => {
   return (
-    <div className="flex items-center justify-between p-4 flex-col ">
+    <div className="flex items-center justify-between p-4 flex-col text-spotifydarkgrey ">
       <div className="flex space-x-6 border ">
         <BsShuffle className="icon-play hover:text-white" />
 
         <BsFillSkipStartFill className="icon-play hover:text-white" />
         {/* //TODO:magnify play when hovering */}
         <div className="icon-play-container">
-          <div className="icon-play-circle bg-white rounded-full p-2">
+          <div className="icon-play-circle bg-spotifydarkgrey rounded-full p-2 hover:bg-white cursor-pointer">
             <BsFillPlayFill className="icon-play-sign " />
           </div>
         </div>

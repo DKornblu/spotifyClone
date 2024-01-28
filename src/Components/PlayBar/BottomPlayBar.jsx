@@ -6,7 +6,7 @@ const BottomPlayBar = () => {
   const [isCurrentlyPlaying, setIsCurrentlyPlaying] = useState(true);
 
   return (
-    <section className="flex flex-row justify-between p-2 h-full items-center">
+    <section className="flex flex-row justify-between p-2 h-full items-center ">
       {isCurrentlyPlaying ? <>Display album</> : <div>display nothing</div>}
       <CurrentlyPlaying />
       <div className="hidden sm:block">
