@@ -2,12 +2,12 @@ import React from "react";
 
 const LeftBottom = () => {
   return (
-    <div>
+    <>
       {/* //TODO: Make responsive */}
-      <ul className="overflow-y-auto max-h-[300px] bg-divblack rounded-lg">
+      <ul className="overflow-y-auto h-3/4 bg-divblack rounded-lg">
         {/* TODO: when we loop fix the margin it should be aroundd the div */}
         <li className="my-4 hover:bg-spotifylightblack">
-          <div className="m-2 border border-green-300 flex flex-row">
+          <div className="m-2  flex flex-row">
             <img
               src="/photos/albumStock.png"
               alt="pic1"
@@ -72,7 +72,7 @@ const LeftBottom = () => {
           </div>
         </li>
       </ul>
-    </div>
+    </>
   );
 };
 

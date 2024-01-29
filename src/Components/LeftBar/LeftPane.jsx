@@ -8,18 +8,18 @@ const LeftPane = () => {
   const iconSize = 25;
 
   return (
-    <section className="flex-1 text-sm m-2 rounded-md space-y-2 flex flex-col justify-start h-5/6 border border-blue-500 bg-divblack">
-      <LeftTop iconSize={iconSize} className="flex-none" />
-      <LeftMiddle iconSize={iconSize} className="flex-none" />
-      <LeftBottom
-        className="grow
-      rounded-md bg-divblack py-2 border border-zinc-100
-     overflow-y-auto
-     "
-      />
-      <div className="flex-none bg-divblack">
-        <CgPentagonUp size={45} className="flex-1" />{" "}
-        {/* Not an exact icon match to Spotify, and only when window is minimized */}
+    <section className="flex-1 text-sm rounded-md space-y-2 flex flex-col mt-2 justify-start w-1/5 border border-blue-500 bg-black">
+      <LeftTop iconSize={iconSize} />
+      <LeftMiddle iconSize={iconSize} />
+      <div className="flex-4 h-full ">
+        <LeftBottom
+          className="
+          rounded-md bg-divblack py-2 overflow-y-auto "
+        />
+        <div className="bg-divblack">
+          <CgPentagonUp size={45} className="flex-1" />{" "}
+          {/* Not an exact icon match to Spotify, and only when window is minimized */}
+        </div>
       </div>
     </section>
   );
