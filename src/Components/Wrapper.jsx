@@ -3,11 +3,13 @@ import RightPane from "./RightPane";
 
 const MainComp = () => {
   return (
-    <section className="flex-1 flex flex-row   h-full bg-spotifylightblack ">
-      <LeftPane />
+    <div className="flex-1 bg-slate-600 ">
+      <section className="flex-1 flex flex-row   h-full bg-spotifylightblack ">
+        <LeftPane />
 
-      <RightPane />
-    </section>
+        <RightPane />
+      </section>
+    </div>
   );
 };
 
