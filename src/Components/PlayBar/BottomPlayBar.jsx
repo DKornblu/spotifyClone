@@ -6,7 +6,7 @@ const BottomPlayBar = () => {
   const [isCurrentlyPlaying, setIsCurrentlyPlaying] = useState(true);
 
   return (
-    <div className="bg-black w-full  h-20 bottom-0 ">
+    <div className="bg-black w-full fixed h-20 bottom-0 border border-yellow-400 ">
       <div className="flex flex-row justify-between p-2 h-full items-center ">
         {isCurrentlyPlaying ? <>Display album</> : <div>display nothing</div>}
         <CurrentlyPlaying />

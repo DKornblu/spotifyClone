@@ -6,12 +6,12 @@ import {
   samplePlaylist,
 } from "../Data/SampleData";
 
-const RecommendedList = () => {
+const SearchResults = () => {
   return (
-    <div className="flex-1  h-full">
+    <section className="flex-1  h-full">
       <div className="flex flex-row justify-between m-4">
         <div>
-          <h1 className="flex-1 text-lg font-bold "> Today's Recommended </h1>
+          <h1 className="flex-1 text-lg font-bold "> Search Results </h1>
         </div>
 
         <div>
@@ -21,14 +21,14 @@ const RecommendedList = () => {
 
       <ul
         className="flex-1  flex justify-center align-middle
-       "
+     "
       >
         {samplePlaylist.map((playlist) => (
           <li
             key={playlist.id}
             className="flex-1 flex flex-col justify-center align-middle  
-              rounded-lg m-4
-              bg-divblack hover:bg-spotifylightblack"
+            rounded-lg m-4
+            bg-divblack hover:bg-spotifylightblack"
           >
             <div className="flex-1 justify-content align-middle text-left ">
               <div className="flex flex-col m-4 ">
@@ -44,8 +44,8 @@ const RecommendedList = () => {
           </li>
         ))}
       </ul>
-    </div>
+    </section>
   );
 };
 
-export default RecommendedList;
+export default SearchResults;
