@@ -5,9 +5,9 @@ import RecommendedList from "../Components/RecommendedList";
 const HomePage = () => {
   return (
     <>
-      <section className="flex flex-1 flex-col h-full overflow-y-scroll bg-spotifyblack border border-green-600">
+      <section className="flex flex-1 flex-col h-screen overflow-y-scroll bg-spotifyblack ">
         <RecommendedList />
-        {/* <RecommendedList /> */}
+        <RecommendedList />
       </section>
     </>
   );

@@ -5,10 +5,10 @@ import { Link } from "react-router-dom";
 
 const LeftTop = ({ iconSize }) => {
   return (
-    <div className="flex-none flex flex-col justify-evenly h-24 border border-red-600 px-4 bg-spotifyblack rounded-md">
+    <div className="flex-none flex flex-col justify-evenly h-24  px-4 bg-spotifyblack rounded-md">
       {/* TODO: current page should have white text, ie home icon and Home to be white by default, but when press search- home turns gray and search turns white */}
       <Link to="/">
-        <div className="flex flex-row items-center border border-red-600 text-white hover:text-white hover:cursor-pointer">
+        <div className="flex flex-row items-center  text-white hover:text-white hover:cursor-pointer">
           <div className="pr-3">
             <GoHomeFill size={iconSize} />
           </div>
@@ -18,7 +18,7 @@ const LeftTop = ({ iconSize }) => {
         </div>
       </Link>
       <Link to="/search">
-        <div className="flex flex-row items-center border border-red-600 hover:text-white hover:cursor-pointer">
+        <div className="flex flex-row items-center  hover:text-white hover:cursor-pointer">
           <div className="pr-3">
             <IoSearchOutline size={iconSize} />
           </div>

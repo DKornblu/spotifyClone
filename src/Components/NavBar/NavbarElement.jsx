@@ -17,8 +17,9 @@ export default function NavbarElement() {
   return (
     <Disclosure
       as="nav"
-      className="bg-spotifylightblack
-      border border-red-500 flex-1
+      className="bg-blackdiv
+      p-2
+      rounded-lg m-2
     "
     >
       {/* TODO: chnage the color to be dynamic- not sure how to do this yet */}

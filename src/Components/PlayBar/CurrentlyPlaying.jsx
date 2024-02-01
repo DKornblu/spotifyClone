@@ -12,7 +12,7 @@ import "./PlayBarCSS.css";
 const CurrentlyPlaying = () => {
   return (
     <div className="flex items-center justify-between p-4 flex-col text-spotifydarkgrey ">
-      <div className="flex space-x-6 border ">
+      <div className="flex space-x-6  ">
         <BsShuffle className="icon-play hover:text-white" />
 
         <BsFillSkipStartFill className="icon-play hover:text-white" />
