@@ -21,15 +21,13 @@ const RecommendedList = () => {
 
       <ul
         className="flex-1  flex justify-center align-middle
-       "
-      >
+       ">
         {samplePlaylist.map((playlist) => (
           <li
             key={playlist.id}
             className="flex-1 flex flex-col justify-center align-middle  
               rounded-lg m-4
-              bg-divblack hover:bg-spotifylightblack"
-          >
+              bg-divblack hover:bg-spotifylightblack">
             <div className="flex-1 justify-content align-middle text-left ">
               <div className="flex flex-col m-4 ">
                 <img

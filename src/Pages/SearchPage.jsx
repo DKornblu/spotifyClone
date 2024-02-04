@@ -8,10 +8,12 @@ import {
 } from "../Data/SampleData";
 import SearchResults from "../Components/SearchResults";
 
-const SearchPage = () => {
+const SearchPage = ({ searchInput }) => {
+  console.log(searchInput);
+
   return (
     <>
-      <section className="flex flex-1 flex-col h-full overflow-y-scroll bg-spotifyblack border border-green-600">
+      <section className="flex flex-1 flex-col h-full overflow-y-scroll bg-spotifyblack ">
         <SearchResults />
       </section>
     </>

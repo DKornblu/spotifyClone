@@ -3,12 +3,14 @@ import { GoHome, GoHomeFill } from "react-icons/go";
 import { IoSearchOutline } from "react-icons/io5";
 import { Link } from "react-router-dom";
 
-const LeftTop = ({ iconSize }) => {
+const LeftTop = ({ iconSize, searchInput, setSearchInput }) => {
   return (
     <div className="flex-none flex flex-col justify-evenly h-24  px-4 bg-spotifyblack rounded-md">
       {/* TODO: current page should have white text, ie home icon and Home to be white by default, but when press search- home turns gray and search turns white */}
       <Link to="/">
-        <div className="flex flex-row items-center  text-white hover:text-white hover:cursor-pointer">
+        <div
+          className="flex flex-row items-center  text-white hover:text-white hover:cursor-pointer"
+          onClick={() => setSearchInput(false)}>
           <div className="pr-3">
             <GoHomeFill size={iconSize} />
           </div>
@@ -18,7 +20,9 @@ const LeftTop = ({ iconSize }) => {
         </div>
       </Link>
       <Link to="/search">
-        <div className="flex flex-row items-center  hover:text-white hover:cursor-pointer">
+        <div
+          className="flex flex-row items-center  hover:text-white hover:cursor-pointer"
+          onClick={() => setSearchInput(true)}>
           <div className="pr-3">
             <IoSearchOutline size={iconSize} />
           </div>

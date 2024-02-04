@@ -5,19 +5,25 @@ import SearchPage from "./Pages/SearchPage";
 import NavbarElement from "./Components/NavBar/NavbarElement";
 import BottomPlayBar from "./Components/PlayBar/BottomPlayBar";
 import LeftPane from "./Components/LeftBar/LeftPane";
+import { useState } from "react";
 
 function App() {
+  const [searchInput, setSearchInput] = useState(false);
+
   return (
     <>
       <section className="flex flex-col justify-start align-middle h-screen border border-yellow-200 ">
         <BrowserRouter>
           <div className="flex-1 flex flex-row justify-center h-100% overflow-hidden ">
-            <LeftPane />
+            <LeftPane {...{ searchInput, setSearchInput }} />
             <div>
-              <NavbarElement />
+              <NavbarElement {...{ searchInput }} />
               <Routes>
-                <Route path="/" element={<HomePage />} />
-                <Route path="/search" element={<SearchPage />} />
+                <Route path="/" element={<HomePage {...{ searchInput }} />} />
+                <Route
+                  path="/search"
+                  element={<SearchPage {...{ searchInput }} />}
+                />
               </Routes>
             </div>
           </div>
