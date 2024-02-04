@@ -1,17 +1,15 @@
 import React from "react";
-import BottomPlayBar from "../Components/PlayBar/BottomPlayBar";
-import Wrapper from "../Components/Wrapper";
+
+import RecommendedList from "../Components/RecommendedList";
 
 const HomePage = () => {
   return (
-    <section className="flex flex-col relative  w-full h-full">
-      <div className="flex-1 bg-slate-600 ">
-        <Wrapper />
-      </div>
-      <div className="bg-black w-full  h-20 bottom-0 ">
-        <BottomPlayBar />
-      </div>
-    </section>
+    <>
+      <section className="flex flex-1 flex-col h-screen overflow-y-scroll bg-spotifyblack ">
+        <RecommendedList />
+        <RecommendedList />
+      </section>
+    </>
   );
 };
 

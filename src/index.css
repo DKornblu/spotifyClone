@@ -21,6 +21,7 @@ body {
   display: flex;
   flex-direction: column;
   @apply text-spotifylightgrey;
+  background-color: #111212;
 
 }
 
