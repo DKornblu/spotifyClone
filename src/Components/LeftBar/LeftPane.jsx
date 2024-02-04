@@ -4,12 +4,12 @@ import LeftTop from "./LeftTop";
 import LeftMiddle from "../LeftBar/LeftMiddle/LeftMiddle";
 import LeftBottom from "./LeftBottom";
 
-const LeftPane = ({ searchInput, setSearchInput }) => {
+const LeftPane = ({ setSearchInput }) => {
   const iconSize = 25;
 
   return (
     <section className="flex-1 text-sm space-y-2 flex flex-col justify-start w-1/5 h-full p-2 bg-black">
-      <LeftTop iconSize={iconSize} {...{ searchInput, setSearchInput }} />
+      <LeftTop iconSize={iconSize} {...{ setSearchInput }} />
       <LeftMiddle iconSize={iconSize} />
       <div className="flex-4 h-full ">
         <LeftBottom
