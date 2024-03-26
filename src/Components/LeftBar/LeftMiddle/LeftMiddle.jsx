@@ -1,9 +1,10 @@
 import React from "react";
+import PropTypes from 'prop-types';
 import { VscLibrary } from "react-icons/vsc";
 import { GoPlus } from "react-icons/go";
 import { MdOutlineArrowForward } from "react-icons/md";
 
-import SlidingBubles from "./SlidingBubles";
+import SlidingBubbles from "./SlidingBubles";
 
 const LeftMiddle = ({ iconSize }) => {
   return (
@@ -26,10 +27,14 @@ const LeftMiddle = ({ iconSize }) => {
         </div>
       </div>
       <div className="flex flex-row justify-between items-center border border-green-600">
-        <SlidingBubles />
+        <SlidingBubbles />
       </div>
     </div>
   );
+};
+
+LeftMiddle.propTypes = {
+  iconSize: PropTypes.number.isRequired,
 };
 
 export default LeftMiddle;

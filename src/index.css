@@ -22,9 +22,7 @@ body {
   flex-direction: column;
   @apply text-spotifylightgrey;
   background-color: #111212;
-
 }
-
 
 .h3-title {
   color: white;
@@ -36,4 +34,43 @@ h1 {
   color: white;
 
   letter-spacing: 0.03rem;
+}
+
+/*Here's a custom class instead of using tailwind syntax- 
+className="sticky top-0 text-gray-400 bg-spotifylightblack rounded-full py-2 px-2 hover:bg-spotifydarkgrey duration-300 cursor-pointer hover:text-white" */
+.sliding-button {
+  position: sticky;
+  z-index: 10;
+  top: 0;
+  color: #a0aec0; /* text-gray-400 */
+  background-color: #212121; /* bg-spotifylightblack */
+  border-radius: 9999px; /* rounded-full */
+  padding: 0.5rem 0.5rem; /* py-2 px-2 */
+  cursor: pointer;
+  transition-duration: 0.3s; /* duration-300 */
+}
+.sliding-button:hover {
+  background-color: #535353; /* hover:bg-spotifydarkgrey */
+  color: #ffffff; /* hover:text-white */
+}
+
+/*className="flex items-center justify-center bg-spotifylightblack text-white py-2 px-3 rounded-full text-xs mx-1 whitespace-nowrap hover:bg-spotifydarkgrey duration-300 cursor-pointer"*/
+.bubble-array {
+  display: flex; /* Flex container */
+  align-items: center; /* items-center - center vertically */
+  justify-content: center; /* justify-center - center horizontally */
+  background-color: #212121; /* bg-spotifylightblack*/
+  color: #ffffff; /* text-white */
+  padding: 0.5rem 0.75rem; /*py-2 px-3*/
+  border-radius: 9999px; /* rounded-full */
+  font-size: 0.75rem; /* text-xs */
+  line-height: 1rem; /* also part of text-xs*/
+  margin-left: 0.25rem; /* mx-1 */
+  margin-right: 0.25rem; /* mx-1 */
+  white-space: nowrap; /* whitespace-nowrap - prevent line breaks */
+  cursor: pointer; /* cursor-pointer */
+  transition-duration: 0.3s; /* duration-300 */
+}
+.bubble-array:hover {
+  background-color: #535353; /* bg-spotifydarkgrey*/
 }

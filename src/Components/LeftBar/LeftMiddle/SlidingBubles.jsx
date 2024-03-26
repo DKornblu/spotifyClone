@@ -1,11 +1,10 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { GrNext, GrPrevious } from 'react-icons/gr';
-import { ChevronLeftIcon, ChevronRightIcon } from '@heroicons/react/24/outline';
+// import { ChevronLeftIcon, ChevronRightIcon } from '@heroicons/react/24/outline';
 
-const SlidingBubles = () => {
+const SlidingBubbles = () => {
   let bubblesArray = ['Playlists', 'Artists', 'Albums', 'Podcasts & Shows'];
 
-  //   TODO: add next and prv fucntionality
   const [currentInd, setCurrentInd] = useState(0);
   const [nextBtn, setNxtBtn] = useState(true);
   const [prevBtn, setPrevBtn] = useState(false);
@@ -17,6 +16,7 @@ const SlidingBubles = () => {
       setCurrentInd((prevInd) => prevInd + 1);
       setPrevBtn(true);
     }
+    // if going to last index, set nextBtn to false
     if (currentInd === bubblesArray.length - 2) {
       setNxtBtn(false);
     }
@@ -29,33 +29,32 @@ const SlidingBubles = () => {
       setCurrentInd((prevInd) => prevInd - 1);
       setNxtBtn(true);
     }
+    // if returning to first index, set prevBtn to false
     if (currentInd === 1) {
       setPrevBtn(false);
     }
   };
 
   return (
-    <div className="flex overflow-x-auto py-2 ">
-      <button className="sticky top-0 left-0 text-gray-400 bg-spotifylightblack rounded-full py-2 px-2 hover:bg-spotifydarkgrey duration-300 cursor-pointer hover:text-white
-      ">
+    <div className="flex overflow-x-hidden py-2 ">
+      <button className="sliding-button left-0" onClick={handlePrev}>
         <GrPrevious size={18} />
       </button>
       <div className="flex">
         {bubblesArray.map((bubble, index) => (
           <div
             key={index}
-            className="flex items-center justify-center bg-spotifylightblack text-white py-2 px-3 rounded-full text-xs mx-1 whitespace-nowrap hover:bg-spotifydarkgrey duration-300 cursor-pointer"
+            className={`bubble-array ${index === currentInd ? 'font-bold' : ''}`}
           >
             {bubble}
           </div>
         ))}
       </div>
-      <button className="sticky top-0 right-0 text-gray-400 bg-spotifylightblack rounded-full py-2 px-2 hover:bg-spotifydarkgrey duration-300 cursor-pointer hover:text-white
-      ">
-        <GrNext />
+      <button className="sliding-button right-0" onClick={handleNext}>
+        <GrNext size={18}/>
       </button>
     </div>
   );
 };
 
-export default SlidingBubles;
+export default SlidingBubbles;
